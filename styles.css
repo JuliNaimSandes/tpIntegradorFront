@@ -9,25 +9,6 @@ input{
     width: 200px;
 }
 
-button{
-    width: 40%;
-    height: 32px;
-    border-radius: 8%;
-    background-color: lightgray;
-    transition-duration: 0.6s;
-}
-
-button:hover{
-    background-color: white;
-    transition-duration: 0.15s;
-}
-
-button:active{
-    background-color: black;
-    color: white;
-    border: white 1px solid;
-}
-
 h4{
     position: static;
     color: red;
@@ -38,8 +19,8 @@ html{
 }
 
 #pag-cont {
-    border: green solid 4px;
-    margin-top: 8%;
+    /*border: green solid 4px;*/
+    margin: 0;
     width: 32vw;
     height: 48vh;
     justify-self: center;
@@ -50,15 +31,40 @@ html{
 }
 
 #vent-cartel{
-    background-color: black;
-    border: 4px white solid;
-    border-radius: 3%;
-    align-content: center;
-    justify-items: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    align-items: center;
+    border: 4px black solid;
+    border-radius: 3%;
     height: 256px;
 }
 
-#vent-cartel label{
+#vent-cartel h2{
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+/*-----------------------------------------*/
+/*Botones*/
+button, #btnSubmit{
+    margin-top: 30px;
+    border: 0px white solid;
     color: white;
+    width: 70%;
+    height: 48%;
+    cursor: pointer;
+    background-color: blue;
+}
+
+button:hover, #btnSubmit:hover{
+    background-color: cornflowerblue;
+}
+
+button:active, #btnSubmit:active{
+    background-color: black;
+    color: white;
+    transition-duration: 0.1s;
 }

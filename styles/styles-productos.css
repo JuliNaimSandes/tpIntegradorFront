@@ -74,20 +74,40 @@
     background-color: transparent;
 }
 
-#tarjeta-producto-agr{
+/*-----------------------------------------*/
+/*Botones*/
+#tarjeta-producto-agr, #tarjeta-producto-elm{
+    margin-top: 0;
     border: 0px white solid;
-    background-color: green;
     color: white;
     width: 80%;
+    height: 32px;
     cursor: pointer;
+}
+
+#tarjeta-producto-agr{
+    background-color: green;
+}
+
+#tarjeta-producto-elm{
+    background-color: red;
+}
+
+/*Hovers*/
+#tarjeta-producto-agr:hover, #tarjeta-producto-elm:hover{
+    color: white;
 }
 
 #tarjeta-producto-agr:hover{
     background-color: greenyellow;
-    color: white;
 }
 
-#tarjeta-producto-agr:active{
+#tarjeta-producto-elm:hover{
+    background-color: salmon;
+}
+
+/*Active*/
+#tarjeta-producto-agr:active, #tarjeta-producto-elm:active{
     background-color: black;
     color: white;
     transition-duration: 0.1ms;

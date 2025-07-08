@@ -3,17 +3,20 @@ footer{
     color: white;
     height: 25%;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 #pag-footer-grad{
     background-image: linear-gradient(to bottom, transparent, rgba(5,5,5,0.8));
     height: 50px;
+    margin-top: 32px;
 }
 
 #pag-footer{
     margin-top: -24px;
     background-color: black;
-    padding-top: 24px;
+    padding-top: 4%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
