@@ -1,0 +1,34 @@
+<%- include("partials/head.ejs") %>
+<%- include("partials/nav.ejs") %>
+    <hr>
+        <h1><%= title %></h1>
+    <hr>
+    <main id="contenedor-post">
+    <div id="altaProducts-container" class="crudForm-container">
+        <h2>Alta productos</h2>
+
+        <form id="altaProduct-form" autocomplete="off">
+
+            <label for="categoryProd">Categoria</label>
+            <select name="category" id="categoryProd" required>
+
+                <option value="suplemento">suplemento</option> 
+                <option value="equipamiento">equipamiento</option>
+                
+            </select>
+
+                <label for="imagenProducto">Imagen</label>
+                <input type="text" name="image" id="imagenProducto" required>
+
+                <label for="nombreUser">Nombre</label>
+                <input type="text" name="name" id="nombreUser"required>
+
+                <label for="precioProd">Precio producto</label>
+                <input type="number" name="price" id="precioProd" required>
+
+                <input type="submit" value="Crear producto" required>
+        </form>
+    </div>
+</main>
+<script src="/js/indexpost.js" defer></script>
+<%- include("partials/footer.ejs")  %>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="pag-title">Int18 - Pagina</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="headerGlobal.js" defer></script>
+    </head>
+
+    <!--Header-->
+    <div id="pag-header-cont"></div>
+    
+    <main id="pag-cont">
+        <section id="vent-cartel">
+            <form id="formulario" action="productos.html">
+                <label for="text-nombre">Ingrese su nombre</label><br>
+                <input type="text" id="text-nombre" name="Nombre"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <script defer>
+        //Codigo del Login
+        const form = document.getElementById("formulario");
+        const nombr = document.getElementById("text-nombre");
+        form.addEventListener("submit", (event) =>{
+            if(nombr.value == ""){
+                event.preventDefault(); //Cancela la redireccion.
+                throw console.error("Nombre vacio");
+            }
+            console.log(event);
+            localStorage.setItem("cliente-nombre", nombr.value);
+        });
+
+    </script>
+</html>

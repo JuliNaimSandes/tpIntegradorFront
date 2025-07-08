@@ -1,0 +1,40 @@
+#lista-productos {
+    border-radius: 3%;
+    width: 90vw;
+    height: auto;
+    justify-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    margin: 8px 2px 56px 2px;
+}
+
+#tarjeta-producto{
+    border: 4px solid black;
+    border-radius: 12.5%;
+    width: 200px;
+    height: 200px;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    background-color: inherit;
+}
+
+#tarjeta-producto-imagen{
+    width: 64px;
+    height: 64px;
+    border: 4px darkgray solid;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+#tarjeta-producto-nombre{
+    margin: 10px 0 10px 0;
+    height: 48px;
+    align-content: center;
+    background-color: transparent;
+}
+
+#tarjeta-producto-precio{
+    background-color: transparent;
+}

@@ -1,0 +1,64 @@
+*{
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    width: 200px;
+}
+
+button{
+    width: 40%;
+    height: 32px;
+    border-radius: 8%;
+    background-color: lightgray;
+    transition-duration: 0.6s;
+}
+
+button:hover{
+    background-color: white;
+    transition-duration: 0.15s;
+}
+
+button:active{
+    background-color: black;
+    color: white;
+    border: white 1px solid;
+}
+
+h4{
+    position: static;
+    color: red;
+}
+
+html{
+    background-color: whitesmoke;
+}
+
+#pag-cont {
+    border: green solid 4px;
+    margin-top: 8%;
+    width: 32vw;
+    height: 48vh;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#vent-cartel{
+    background-color: black;
+    border: 4px white solid;
+    border-radius: 3%;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    height: 256px;
+}
+
+#vent-cartel label{
+    color: white;
+}

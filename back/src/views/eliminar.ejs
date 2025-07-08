@@ -1,0 +1,28 @@
+<%- include("partials/head.ejs") %>
+<%- include("partials/nav.ejs") %>
+    <hr>
+        <h1><%= title %></h1>
+        <p><%= about %></p>
+    <hr>
+        <main id="contenedor-get">
+            <div id="productos-container" class="crudForm-container">
+                <h2>Consultar productos</h2>
+
+                <form id="getProducts-form">
+                    <label for="idProd">ID producto</label>
+                    <input type="number" name="idProd" id="idProd">
+
+                    <input type="submit" value="Consultar producto" required>
+
+                </form>
+            </div>
+
+            <div id="getId-container">
+                <ul id="getId-list">
+                
+                </ul>
+
+            </div>
+        </main> 
+        <script src="/js/indexdelete.js" defer></script>   
+<%- include("partials/footer.ejs")  %>
