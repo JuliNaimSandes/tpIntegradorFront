@@ -6,6 +6,7 @@ function generar_tarjeta(nombre, imagen, precio, categoria) {
             <h3 id="tarjeta-producto-nombre">${nombre}</h3>
             <img id="tarjeta-producto-imagen" src="${imagen}">
             <h3 id="tarjeta-producto-precio">$${precio}</h3>
+            <button id="tarjeta-producto-agr">Agregar al Carro</button>
         </div>
     `;
 }
@@ -27,7 +28,12 @@ async function cargarProductos() {
             productos_t += generar_tarjeta(prod.name, prod.image, prod.price, prod.category);
         });
         lista.innerHTML = productos_t;
-    } catch (err) {
+    } 
+    catch (err) { //Impresion del error.
+        document.getElementById("lista-productos-label").innerHTML = `
+            No se pudo cargar los productos!<br>
+            <strong id="lista-productos-error"><u>${err.message}</strong></u>
+        `
         console.error("Error cargando productos:", err);
     }
 }

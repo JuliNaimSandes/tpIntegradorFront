@@ -1,4 +1,25 @@
+#pag-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 102%;
+}
+
+#listado-label{
+    margin-bottom: -12px;
+    background-color: white;
+    padding: 25px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-left: 4px darkgray solid;
+    border-right: 4px darkgray solid;
+    border-top: 4px darkgray solid;
+    z-index: 3;
+}
+
 #lista-productos {
+    border: 4px darkgray solid;
     border-radius: 3%;
     width: 90vw;
     height: auto;
@@ -8,24 +29,38 @@
     justify-content: space-around;
     background-color: white;
     margin: 8px 2px 56px 2px;
+
+    min-height: 208px;
+}
+
+#lista-productos-label{
+    align-self: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+#lista-productos-error{
+    color: red;
 }
 
 #tarjeta-producto{
     border: 4px solid black;
     border-radius: 12.5%;
     width: 200px;
-    height: 200px;
-    margin: 10px 10px 10px 10px;
+    height: 256px;
+    margin: 25px 12px;
     text-align: center;
+    align-self: center;
     background-color: inherit;
 }
 
 #tarjeta-producto-imagen{
-    width: 64px;
-    height: 64px;
+    width: 96px;
+    height: 96px;
     border: 4px darkgray solid;
     border-radius: 50%;
-    background-color: transparent;
+    background-color: white;
+    margin-bottom: 14px;
 }
 
 #tarjeta-producto-nombre{
@@ -37,4 +72,23 @@
 
 #tarjeta-producto-precio{
     background-color: transparent;
+}
+
+#tarjeta-producto-agr{
+    border: 0px white solid;
+    background-color: green;
+    color: white;
+    width: 80%;
+    cursor: pointer;
+}
+
+#tarjeta-producto-agr:hover{
+    background-color: greenyellow;
+    color: white;
+}
+
+#tarjeta-producto-agr:active{
+    background-color: black;
+    color: white;
+    transition-duration: 0.1ms;
 }

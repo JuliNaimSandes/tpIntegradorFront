@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title id="pag-title">Int18 - Pagina</title>
+        <title id="pag-title">Int18 - Bienvenido</title>
+        <link rel="icon" type="image/png" href="assets\img\favicon.png">
         <link rel="stylesheet" href="styles.css">
-        <script src="headerGlobal.js" defer></script>
+        <script src="js/bases.js" defer></script>
     </head>
 
-    <!--Header-->
     <div id="pag-header-cont"></div>
     
     <main id="pag-cont">
@@ -21,7 +21,11 @@
         </section>
     </main>
 
+    <div id="pag-footer-cont"></div>
+
     <script defer>
+        localStorage.clear();
+
         //Codigo del Login
         const form = document.getElementById("formulario");
         const nombr = document.getElementById("text-nombre");

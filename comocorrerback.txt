@@ -1,0 +1,4 @@
+!!!!!!!A LA HORA DE CORRER EL BACK-END, TIENE QUE SER EN LA CARPETA DE "Back"!!!!!!!
+
+Es decir, desde la terminar usar "cd back" antes de intetar correrlo con Node. Sino, 
+no registrara el ".env".

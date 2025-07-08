@@ -1,0 +1,27 @@
+footer{
+    /* background-image: linear-gradient(to bottom, transparent, rgba(5,5,5,0.8)); */
+    color: white;
+    height: 25%;
+    width: 100%;
+}
+
+#pag-footer-grad{
+    background-image: linear-gradient(to bottom, transparent, rgba(5,5,5,0.8));
+    height: 50px;
+}
+
+#pag-footer{
+    margin-top: -24px;
+    background-color: black;
+    padding-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 5.7vh;
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
+    overflow: hidden;
+}
