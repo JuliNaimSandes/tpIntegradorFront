@@ -13,29 +13,31 @@
     background-color: white;
 }
 
-#pag-header div{
-    width: 256px;
-}
-
 #pag-header img{
     width: 48px;
     height: 48px;
 }
-
+ 
 /*Desplegable*/
 #pag-nav-titulo{
     cursor: default;
 }
 
 #pag-nav-opciones {
+    height: 1px;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    width: 90px;
+    margin-left: -16px;
+    text-align: center;
+
     display: block;
     position: absolute;
-    margin-left: -3px;
     background-color: white;
-    border: 3px rgba(0,0,0,0.0) solid;
+    border: 1px rgba(0,0,0,0.0) solid;
     color: rgba(0,0,0,0.0);
     border-radius: 10%;
-    height: 1px;
     overflow: hidden;
     z-index: 20;
 }
@@ -47,18 +49,21 @@
     transition-duration: 0.1ms;
 }
 
-#pag-nav-opcion  {
+#pag-nav-opcion {
     font-size: 16px;
     padding: 5px 10px;
     margin: 0;
-    cursor:pointer;
     text-align: center;
     justify-content: center;
 }
 
-#pag-nav-opcion:hover {
-    transition-duration: 0.15s;
-    background-color: darkgray;
+#pag-nav-opciones a {
+    color: black;
+}
+
+#pag-nav-opciones a:hover {
+    color: lightcoral;
+    transition-duration: 0.2s;
 }
 
 #pag-header-carrito img{

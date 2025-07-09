@@ -54,7 +54,8 @@ button, #btnSubmit{
     border: 0px white solid;
     color: white;
     width: 70%;
-    height: 48%;
+    height: 40px;
+    border-radius: 2%;
     cursor: pointer;
     background-color: blue;
 }
